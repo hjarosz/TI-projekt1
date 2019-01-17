@@ -1,0 +1,91 @@
+html {
+	min-height: 100%;
+/*	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);*/
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+
+
+article {
+	margin-right: 15%;
+	margin-left: 15%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 120%;
+}
+
+canvas {
+	background-color: lightgray;
+	display: inline;
+}
+
+.center {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+#navbar {
+	width: 100%;
+	margin-left: -8px;
+	margin-top: -20px;
+	position: fixed;
+	top: 0;
+}
+
+#navbar ul{
+  	list-style-type: none;
+/*  	margin: 0;
+  	padding: 0;
+*/  
+	overflow: hidden;
+  	background-color: #333;
+}
+
+#navbar li a{
+	font-size: 150%;
+	float: left;
+	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+#navbar li a:hover{
+	background-color: #111;
+}
+
+.colorlist ul{
+	list-style-type: none;
+	max-width: 400px;
+}
+
+.colorlist li{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	width: 60%;
+}
+
+.colorlist li:hover{
+	background-color: lightgray;
+}
+
+#colortxt {
+	margin-top: 100px;
+	float: left;
+	font-size: 70px;
+}
+
+#btnMusic {
+	width: 35px;
+	height: 35px;
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	color: #333;
+	background: url("media/pause.png");
+	border: none;
+}

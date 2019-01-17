@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <title>Projekt 1</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/script.js"></script>
+</head>
+<body onload="toggleMusic()">
+	<nav id="navbar">
+		<ul>
+			<li><a href="#swiatlo">Światło</a></li>
+			<li><a href="#pryzmat">Pryzmat</a></li>
+			<li><a href="#rozszczepienie">Rozszczepienie</a></li>
+			<li><a href="#kolory">Kolory</a></li>
+			<button id="btnMusic" onclick="toggleMusic()"></button>
+			<li><a href="doc.html" style="float: right;">Dokumentacja</a></li>
+			<audio id="music">
+			    <source src="media/music.mp3"/>
+			</audio>
+		</ul>
+	</nav>
+	<article id="swiatlo">
+		<br><br>
+		<h1>Światło</h1>
+		Pojęcie to ma inne znaczenie potoczne i w nauce.
+		<br><br>
+		Potocznie nazywa się tak widzialną część promieniowania elektromagnetycznego, czyli promieniowanie widzialne odbierane przez siatkówkę oka ludzkiego. Precyzyjne ustalenie zakresu długości fal elektromagnetycznych nie jest tutaj możliwe, gdyż wzrok każdego człowieka charakteryzuje się nieco inną wrażliwością – stąd za najszerszy przedział przyjmuje się 380–780 nm, choć często podaje się mniejsze zakresy (szczególnie od strony fal dłuższych), aż do 400–700 nm.
+		<br><br>
+		W naukach ścisłych używa się określenia promieniowanie optyczne. Jest to promieniowanie podlegające prawom optyki geometrycznej oraz falowej. Przyjmuje się, że promieniowanie optyczne obejmuje zakres fal elektromagnetycznych o długości od 100 nm do 1 mm, podzielony na trzy zakresy: podczerwień, światło widzialne i ultrafiolet. Wszystkie te zakresy można obserwować i mierzyć, używając podobnego zestawu przyrządów, a wyniki tych badań można opracowywać, stosując te same prawa fizyki.
+		<br><br>
+		Przykłady wskazujące, że światłem należy nazywać szerszy zakres promieniowania niż tylko promieniowanie widzialne:
+		<ul>
+		    <li>
+		    	wiele substancji barwiących płowieje nie tylko od kontaktu ze światłem widzialnym, ale i bliskim ultrafioletem, w tym pochodzącym ze Słońca
+		    </li>
+		    <li>
+		    	rozszczepiając, za pomocą pryzmatu, światło emitowane przez rozgrzane ciała można zaobserwować wzrost temperatury, przesuwając termometr wzdłuż uzyskanych barw widmowych; wzrost ten jest mierzalny także dalej, w niewidocznej części widma, która jest również załamywana przez ten pryzmat
+			</li>
+			<li>
+		    	wiele zwierząt ma zakresy widzenia światła wykraczające poza zakres widzenia ludzkiego oka.
+			</li>
+		</ul>
+		Nauka zajmująca się badaniem światła to optyka. Współczesna optyka, zgodnie z dualizmem korpuskularno-falowym, postrzega światło jednocześnie jako falę elektromagnetyczną oraz jako strumień cząstek nazywanych fotonami.
+
+		Światło porusza się w próżni zawsze z taką samą prędkością zwaną prędkością światła. Jej wartość oznaczana jako c jest jedną z podstawowych stałych fizycznych i wynosi 299 792 458 m/s. Prędkość światła w innych ośrodkach jest mniejsza i zależy od współczynnika załamania danego ośrodka. 
+	</article>
+	<article id="pryzmat">
+		<br><br>
+		<h1>Pryzmat</h1>
+		Pryzmat – bryła z materiału przezroczystego o co najmniej dwóch ścianach płaskich nachylonych do siebie pod kątem omega (tzw. kątem łamiącym pryzmatu).
+		<br>
+		Używany w optyce do zmiany kierunku biegu fal świetlnych, a poprzez to, że zmiana kierunku zależy od długości fali, jest używany do analizy widmowej światła. Zjawisko całkowitego wewnętrznego odbicia pozwala użyć pryzmatu jako idealnego elementu odbijającego światło. Pryzmaty wykorzystywane są w produkcji wielu urządzeń optycznych, np.: lornetek, peryskopów.
+	</article>
+	<article id="rozszczepienie">
+		<br><br>
+		<h1>Rozszczepienie</h1>
+		Jeżeli fala przechodzi przez granicę ośrodków zachodzi zjawisko załamania. Jeżeli w jednym z ośrodków prędkość rozchodzenia się fali zależy od częstotliwości, to fale o różnej częstotliwości załamują się pod różnymi kątami. W efekcie droga, po której porusza się fala, zależy od jej częstotliwości, czyli zachodzi rozszczepienie.
+
+		Zjawisko rozszczepienia zachodzi również na siatce dyfrakcyjnej, ale istota tego zjawiska jest inna.
+		<br> <br>
+		<div style="text-align: center;">
+			<button id="btnRysuj" onclick="myAnimation()">Rysuj</button>
+			<button id="btnCzysc" onclick="clearCanvas()">Czyść</button>
+		</div>
+		<canvas id="myCanvas" class="center" width="800" height="300" style="border:1px solid"></canvas>
+		<br><br>
+		Występowanie zjawiska tęczy jest dokładnie tym samym mechanizmem. Źródłem światła wywołującego tęczę jest zwykle Słońce, czasem także Księżyc. Efekt tęczy może być widoczny wszędzie, gdzie występują krople wody w powietrzu, oświetlane przez promienie słoneczne, padające z tyłu obserwatora, a Słońce znajduje się na stosunkowo niewielkiej wysokości (kącie do poziomu mniejszym niż 40°), przy większych wysokościach Słońca tęcza może być obserwowana, gdy tworzące ją krople są poniżej horyzontu, np. w górach lub z samolotu. Warunkiem uzyskania wyraźnej tęczy jest oświetlenie kropel deszczu (chmury) przez równoległą wiązkę światła słonecznego oraz brak oświetlenia rozproszonego. Najbardziej widowiskowe tęcze można zaobserwować, gdy wywołujące ją światło jest jasne, przed obserwatorem pada intensywny deszcz, jednocześnie tło tęczy jest ciemne. W sprzyjających warunkach można obserwować także tęczę wtórną jako łuk o większym od tęczy pierwotnej promieniu. Teoretycznie występują też kolejne łuki tęczy, ale praktycznie nie są możliwe do obserwacji ze względu na bardzo słabą jasność. W laboratorium możliwa jest obserwacja wielu łuków tęczy.
+		<br><br>
+		<img src="media/tecza.jpeg" alt="zjawisko tęczy" class="center">
+	</article>
+	<article id="kolory">
+	<br><br>
+	<h1>Kolory</h1>
+		<div class="colorlist">
+			<ul style="width: 40%; float: left; display: inline-block;">
+				<li id="1" style="color: #551A8B" onclick="changeColor(1)">fioletowy</li>
+				<li style="color: #0000FF" onclick="changeColor(2)">niebieski</li>
+				<li style="color: #21B6A8" onclick="changeColor(3)">niebieskozielony</li>
+				<li style="color: #00FF00" onclick="changeColor(4)">zielony</li>
+				<li style="color: #ADFF2F" onclick="changeColor(5)">zielonożółty</li>
+				<li style="color: #FFFF00" onclick="changeColor(6)">żółty</li>
+				<li style="color: #FFA500" onclick="changeColor(7)">pomarańczowy</li>
+				<li style="color: #FF0000" onclick="changeColor(8)">czerwony</li>
+			</ul>
+		</div>
+		<div id="colortxt">
+			długość fali
+		</div>
+	</article>
+</body>
+</html>
